@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- main css file -->
     <link rel="stylesheet" href="main.css">
-    <script src="index.js" defer></script>
+    <!-- employee css file -->
+    <link rel="stylesheet" href="/styles/employee.css">
     <title>Employees - EMS</title>
 </head>
 <body>
@@ -22,5 +25,73 @@
             </a>
         </ul>
     </aside>
+    <main>
+        <center>
+            <h2>Employess</h2>
+        </center>
+        <section>
+            <div class="emp__table__top">
+                <button id = "openModal">add</button>
+            </div>
+            <table>
+                <thead>
+                    <th>Emp No.</th>
+                    <th>Last Name</th>
+                    <th>FirstName</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ADD EMPLOYEE MODAL -->
+        <div id = "modal" class="modal">
+            <span id="closeModalBtn" class="close__modal__btn">X</span>
+            <center>
+                <h3>Add Employee</h3>
+            </center>
+            <form id="addEmployeeForm">
+                <label>
+                    <p>First Name</p>
+                    <input type="text" id="firstName" required>
+                </label>
+                <label>
+                    <p>Last Name</p>
+                    <input type="text" id="lastName" required>
+                </label>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label>
+                        <p>Phone Number</p>
+                        <input type="text" id="phoneNumber" required>
+                    </label>
+                    <label>
+                        <p>Email</p>
+                        <input type="email" id="email" required>
+                    </label>
+                </fieldset>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+
+        <!-- BACK-DROP -->
+        <div class="back__drop"></div>
+
+    </main>
+
+
+    <!-- main js file -->
+    <script src="index.js"></script>
+    <!-- employee js file -->
+    <script src="/scripts/employee.js"></script>
 </body>
 </html>

@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --primary: rgb(185, 34, 244);
+    --secondary: rgb(255, 253, 253);
+    --aero: rgba(255, 255, 255, 0.3);
+    --tertiary: rgba(185, 34, 244, 0.103);
+    --padding: 1rem;
+    --paddingY: .5rem;
+    --paddingX: .8rem;
+    --paddingMd: 1rem;
+    --paddingLg: 2rem;
+    --gap: .5rem;
+    --margin: 1rem;
+    --marginY: 1.1rem;
+    --marginX: 1rem;
+    --roundSm: .2rem;
+    --round: .5rem;
+    --roundMd: 1rem;
+    --roundFull: 50%;
+    --shadow: 0 5px 10px rgb(245 229 252);
+    --shadowLg: 0 5px 20px rgb(0 0 0 / .1);
+}
+
+
+button{
+    margin: var(--marginY) 0;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: var(--roundSm);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+button[type="submit"]{
+    width: 100%;
+    height: 3rem;
+}
+
+button:hover{
+    box-shadow: var(--shadowLg);
+}
+
+.modal{
+    display: none;
+    z-index: 10;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    box-shadow: var(--shadowLg);
+    height: 100vh;
+    width: 40%;
+    background-color: var(--secondary);
+    padding: var(--paddingLg);
+    border-radius: var(--round);
+}
+
+.close__modal__btn{
+    position: inherit;
+    right: 1rem;
+    top: 1rem;
+    display: grid;
+    place-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--roundFull);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.close__modal__btn:hover{
+    background-color: rgb(0 0 0 / .09);
+}
+
+input{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: var(--roundSm);
+    margin: var(--marginY) 0;
+    padding: var(--paddingX);
+    outline: none;
+    background-color: var(--tertiary);
+
+}
+
+input:focus{
+    outline: 2px solid var(--primary);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+fieldset{
+    padding: var(--padding);
+}
+
+legend{
+    color: var(--primary);
+}

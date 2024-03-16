@@ -7,7 +7,7 @@
 
 :root{
     --primary: rgb(185, 34, 244);
-    --secondary: rgb(239, 208, 252);
+    --secondary: rgb(255, 253, 253);
     --aero: rgba(255, 255, 255, 0.3);
     --padding: 1rem;
     --paddingY: .5rem;
@@ -20,7 +20,7 @@
     --roundMd: 1rem;
     --roundFull: 50%;
     --shadow: 0 0 10px rgb(0 0 0 / .1);
-    --shadowLg: 0 0 20px rgba(0, 0, 0, .1);
+    --shadowLg: 0 0 30px rgba(0, 0, 0, .1);
 }
 a{
     text-decoration: none;
@@ -53,3 +53,41 @@ aside ul li {
 .active__link{
     background-color: var(--aero);
 }
+
+main{
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--secondary);
+    padding: var(--padding);
+    margin-left: 20%;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    padding: 8px;
+  }
+  
+  td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+  }
+
+  .back__drop{
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / .6);
+  }
