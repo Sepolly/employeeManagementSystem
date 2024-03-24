@@ -1,2 +1,2 @@
 # employeeManagementSystem
-Just basic EMS with vanilaa JS for practice
+Just basic EMS with vanila JS for practice
